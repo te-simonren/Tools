@@ -203,7 +203,7 @@ fi
 KERNELOPTS="$serialConsolePropertiesForGrub"
 export KERNELOPTS
 export BOOTLOADER="grub"
-printf 'y' | setup-disk -m sys -k $kernelType -s 0 $IncDisk
+setup-disk -m sys -k $kernelType -s 0 $IncDisk
 
 # Reboot, the system in the memory will all be written to the hard drive.
 exec reboot
